@@ -1,0 +1,61 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "NumDecomp.Domain.Services/1.0.0": {
+        "dependencies": {
+          "NumDecomp.App.DTO": "1.0.0",
+          "NumDecomp.Domain.Core": "1.0.0"
+        },
+        "runtime": {
+          "NumDecomp.Domain.Services.dll": {}
+        }
+      },
+      "NumDecomp.App.DTO/1.0.0": {
+        "runtime": {
+          "NumDecomp.App.DTO.dll": {}
+        }
+      },
+      "NumDecomp.Domain/1.0.0": {
+        "runtime": {
+          "NumDecomp.Domain.dll": {}
+        }
+      },
+      "NumDecomp.Domain.Core/1.0.0": {
+        "dependencies": {
+          "NumDecomp.App.DTO": "1.0.0",
+          "NumDecomp.Domain": "1.0.0"
+        },
+        "runtime": {
+          "NumDecomp.Domain.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NumDecomp.Domain.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NumDecomp.App.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NumDecomp.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NumDecomp.Domain.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

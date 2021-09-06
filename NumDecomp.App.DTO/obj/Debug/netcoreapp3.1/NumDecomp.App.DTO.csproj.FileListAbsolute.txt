@@ -1,0 +1,9 @@
+C:\Users\victo\Documents\Projects\NumDecomp\NumDecomp.App.DTO\bin\Debug\netcoreapp3.1\NumDecomp.App.DTO.deps.json
+C:\Users\victo\Documents\Projects\NumDecomp\NumDecomp.App.DTO\bin\Debug\netcoreapp3.1\NumDecomp.App.DTO.dll
+C:\Users\victo\Documents\Projects\NumDecomp\NumDecomp.App.DTO\bin\Debug\netcoreapp3.1\NumDecomp.App.DTO.pdb
+C:\Users\victo\Documents\Projects\NumDecomp\NumDecomp.App.DTO\obj\Debug\netcoreapp3.1\NumDecomp.App.DTO.csprojAssemblyReference.cache
+C:\Users\victo\Documents\Projects\NumDecomp\NumDecomp.App.DTO\obj\Debug\netcoreapp3.1\NumDecomp.App.DTO.AssemblyInfoInputs.cache
+C:\Users\victo\Documents\Projects\NumDecomp\NumDecomp.App.DTO\obj\Debug\netcoreapp3.1\NumDecomp.App.DTO.AssemblyInfo.cs
+C:\Users\victo\Documents\Projects\NumDecomp\NumDecomp.App.DTO\obj\Debug\netcoreapp3.1\NumDecomp.App.DTO.csproj.CoreCompileInputs.cache
+C:\Users\victo\Documents\Projects\NumDecomp\NumDecomp.App.DTO\obj\Debug\netcoreapp3.1\NumDecomp.App.DTO.dll
+C:\Users\victo\Documents\Projects\NumDecomp\NumDecomp.App.DTO\obj\Debug\netcoreapp3.1\NumDecomp.App.DTO.pdb

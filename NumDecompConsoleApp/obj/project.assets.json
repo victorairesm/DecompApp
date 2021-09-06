@@ -1,0 +1,253 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Microsoft.Extensions.DependencyInjection/5.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "NumDecomp.App.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/NumDecomp.App.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NumDecomp.App.DTO.dll": {}
+        }
+      },
+      "NumDecomp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/NumDecomp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NumDecomp.Domain.dll": {}
+        }
+      },
+      "NumDecomp.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "NumDecomp.App.DTO": "1.0.0",
+          "NumDecomp.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NumDecomp.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NumDecomp.Domain.Core.dll": {}
+        }
+      },
+      "NumDecomp.Domain.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "NumDecomp.App.DTO": "1.0.0",
+          "NumDecomp.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NumDecomp.Domain.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NumDecomp.Domain.Services.dll": {}
+        }
+      },
+      "NumDecomp.Infra.CC.IOC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "5.0.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "NumDecomp.Domain.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NumDecomp.Infra.CC.IOC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NumDecomp.Infra.CC.IOC.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.DependencyInjection/5.0.2": {
+      "sha512": "xzFW00AZEvOXM1OX+0+AYH5op/Hf3u//e6wszBd/rK72sypD+jx5CtsHxM4BVuFBEs8SajfO4QzSJtrQaHDr4A==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/5.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "NumDecomp.App.DTO/1.0.0": {
+      "type": "project",
+      "path": "../NumDecomp.App.DTO/NumDecomp.App.DTO.csproj",
+      "msbuildProject": "../NumDecomp.App.DTO/NumDecomp.App.DTO.csproj"
+    },
+    "NumDecomp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../NumDecomp.Domain/NumDecomp.Domain.csproj",
+      "msbuildProject": "../NumDecomp.Domain/NumDecomp.Domain.csproj"
+    },
+    "NumDecomp.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../NumDecomp.Domain.Core/NumDecomp.Domain.Core.csproj",
+      "msbuildProject": "../NumDecomp.Domain.Core/NumDecomp.Domain.Core.csproj"
+    },
+    "NumDecomp.Domain.Services/1.0.0": {
+      "type": "project",
+      "path": "../NumDecomp.Domain.Services/NumDecomp.Domain.Services.csproj",
+      "msbuildProject": "../NumDecomp.Domain.Services/NumDecomp.Domain.Services.csproj"
+    },
+    "NumDecomp.Infra.CC.IOC/1.0.0": {
+      "type": "project",
+      "path": "../NumDecomp.Infra.CC.IOC/NumDecomp.Infra.CC.IOC.csproj",
+      "msbuildProject": "../NumDecomp.Infra.CC.IOC/NumDecomp.Infra.CC.IOC.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Microsoft.Extensions.DependencyInjection >= 5.0.2",
+      "NumDecomp.App.DTO >= 1.0.0",
+      "NumDecomp.Domain >= 1.0.0",
+      "NumDecomp.Domain.Core >= 1.0.0",
+      "NumDecomp.Infra.CC.IOC >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\victo\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\victo\\Documents\\Projects\\NumDecomp\\NumDecompConsoleApp\\NumDecompConsoleApp.csproj",
+      "projectName": "NumDecompConsoleApp",
+      "projectPath": "C:\\Users\\victo\\Documents\\Projects\\NumDecomp\\NumDecompConsoleApp\\NumDecompConsoleApp.csproj",
+      "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\victo\\Documents\\Projects\\NumDecomp\\NumDecompConsoleApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\victo\\Documents\\Projects\\NumDecomp\\NumDecomp.App.DTO\\NumDecomp.App.DTO.csproj": {
+              "projectPath": "C:\\Users\\victo\\Documents\\Projects\\NumDecomp\\NumDecomp.App.DTO\\NumDecomp.App.DTO.csproj"
+            },
+            "C:\\Users\\victo\\Documents\\Projects\\NumDecomp\\NumDecomp.Domain.Core\\NumDecomp.Domain.Core.csproj": {
+              "projectPath": "C:\\Users\\victo\\Documents\\Projects\\NumDecomp\\NumDecomp.Domain.Core\\NumDecomp.Domain.Core.csproj"
+            },
+            "C:\\Users\\victo\\Documents\\Projects\\NumDecomp\\NumDecomp.Domain\\NumDecomp.Domain.csproj": {
+              "projectPath": "C:\\Users\\victo\\Documents\\Projects\\NumDecomp\\NumDecomp.Domain\\NumDecomp.Domain.csproj"
+            },
+            "C:\\Users\\victo\\Documents\\Projects\\NumDecomp\\NumDecomp.Infra.CC.IOC\\NumDecomp.Infra.CC.IOC.csproj": {
+              "projectPath": "C:\\Users\\victo\\Documents\\Projects\\NumDecomp\\NumDecomp.Infra.CC.IOC\\NumDecomp.Infra.CC.IOC.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[5.0.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.13, 3.1.13]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
