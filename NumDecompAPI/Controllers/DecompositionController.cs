@@ -26,7 +26,7 @@ namespace NumDecompAPI.Controllers
             if (result.DividingNumbers.Count > 0)
                 return Ok(result);
 
-            return BadRequest(result);
+            return Problem(result.Error);
         }
     }
 }

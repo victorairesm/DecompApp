@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31005.135
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{0072A005-2C40-4DF7-B38F-80BA990E273B}"
 EndProject
@@ -29,11 +29,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CC", "CC", "{1C1986F4-40F2-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumDecomp.Infra.CC.IOC", "NumDecomp.Infra.CC.IOC\NumDecomp.Infra.CC.IOC.csproj", "{173AB969-A977-4B79-8FC6-B6ACE763ABBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumDecompAPI", "NumDecompAPI\NumDecompAPI.csproj", "{82183A3D-76B2-458B-89E5-BD84590AC48C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumDecompAPI", "NumDecompAPI\NumDecompAPI.csproj", "{82183A3D-76B2-458B-89E5-BD84590AC48C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{81BF7DE9-29AF-45B5-8E58-CC9921D575E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumDecomp.Test", "NumDecomp.Test\NumDecomp.Test.csproj", "{F3606C83-70F7-447B-97CE-4F81EF4FA894}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumDecomp.Test", "NumDecomp.Test\NumDecomp.Test.csproj", "{F3606C83-70F7-447B-97CE-4F81EF4FA894}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumDecompMinimalAPI", "NumDecompMinimalAPI\NumDecompMinimalAPI.csproj", "{125DA973-8B8B-40F2-8A94-73568A0D7701}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +75,10 @@ Global
 		{F3606C83-70F7-447B-97CE-4F81EF4FA894}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3606C83-70F7-447B-97CE-4F81EF4FA894}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3606C83-70F7-447B-97CE-4F81EF4FA894}.Release|Any CPU.Build.0 = Release|Any CPU
+		{125DA973-8B8B-40F2-8A94-73568A0D7701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125DA973-8B8B-40F2-8A94-73568A0D7701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125DA973-8B8B-40F2-8A94-73568A0D7701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125DA973-8B8B-40F2-8A94-73568A0D7701}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +93,7 @@ Global
 		{173AB969-A977-4B79-8FC6-B6ACE763ABBA} = {1C1986F4-40F2-4EBA-9CEA-7CE93B95D7B2}
 		{82183A3D-76B2-458B-89E5-BD84590AC48C} = {0072A005-2C40-4DF7-B38F-80BA990E273B}
 		{F3606C83-70F7-447B-97CE-4F81EF4FA894} = {81BF7DE9-29AF-45B5-8E58-CC9921D575E4}
+		{125DA973-8B8B-40F2-8A94-73568A0D7701} = {0072A005-2C40-4DF7-B38F-80BA990E273B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61EF70CF-85BB-4D46-808A-87E0ED73F25F}
