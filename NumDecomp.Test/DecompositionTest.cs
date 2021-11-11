@@ -17,52 +17,17 @@ namespace NumDecomp.Test
                 EntryNumber = 75
             };
 
-            var expectedList = new List<int> { 1, 3, 5, 15, 25, 75 };
+            var DividingExpectedList = new List<int> { 1, 3, 5, 15, 25, 75 };
+            var PrimesExpectedList = new List<int> { 3, 5 };
 
             //Act
             var result = serviceDecomposition.GetDecomposition(divisor);
 
             //Assert
-            if (result.Dividers.Count > 0)
-            {
-                Assert.True(true);
-            }
-            else
-            {
-                Assert.True(false);
-            }
-
+            Assert.True(result.DividingNumbers.Count > 0);
             Assert.Null(result.Error);
-            Assert.Equal(expectedList, result.Dividers);
-        }
-
-        [Fact]
-        public void PrimeUnitTest()
-        {
-            //Arrange
-            ServiceDecomposition serviceDecomposition = new ServiceDecomposition();
-            Decomposition divisor = new Decomposition
-            {
-                DividingNumbers = new List<int> { 1, 3, 5, 15, 25, 75 }
-            };
-
-            var expectedList = new List<int> { 3, 5 };
-
-            //Act
-            var result = serviceDecomposition.GetPrimes(divisor.DividingNumbers);
-
-            //Assert
-            if (result.Primes.Count > 0)
-            {
-                Assert.True(true);
-            }
-            else
-            {
-                Assert.True(false);
-            }
-
-            Assert.Null(result.Error);
-            Assert.Equal(expectedList, result.Primes);
+            Assert.Equal(DividingExpectedList, result.DividingNumbers);
+            Assert.Equal(PrimesExpectedList, result.PrimeNumbers);
         }
     }
 }

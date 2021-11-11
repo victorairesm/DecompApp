@@ -6,11 +6,11 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace NumDecompConsoleApp
 {
-    static class Program
+    internal static class Program
     {
         private static IServiceDecomposition _serviceDecomp;
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var serviceCollection = new ServiceCollection();
             var serviceProvider = MInjector.GetProvider(serviceCollection);
@@ -23,7 +23,7 @@ namespace NumDecompConsoleApp
         public static void StartMenu()
         {
             Console.WriteLine("Este programa irá decompor o número que será digitado e enumerará os primos.");
-            Console.WriteLine("Digite um número para prosseguir: ");
+            Console.WriteLine("\nDigite um número para prosseguir: ");
 
             string entryNumber = Console.ReadLine();
 
@@ -33,32 +33,37 @@ namespace NumDecompConsoleApp
                 decomp.EntryNumber = int.Parse(entryNumber);
 
                 MakeDecomposition(decomp);
-                Console.Write("Os números divisores são: ");
 
-                for (int x = 0; x < decomp.DividingNumbers.Count; x++)
-                {
-                    Console.Write(decomp.DividingNumbers[x] + " ");
-                }
+                PrintDividing(decomp);
+                PrintPrimes(decomp);
+            }
+        }
 
-                if (decomp.PrimeNumbers.Count > 0)
-                {
-                    Console.Write("\r\nOs números primos são: ");
+        private static void PrintDividing(Decomposition decomp)
+        {
+            Console.Write("\nOs números divisores são: ");
+            decomp.DividingNumbers.ForEach(i => Console.Write("\n{0}", i));
+        }
 
-                    for (int x = 0; x < decomp.PrimeNumbers.Count; x++)
-                    {
-                        Console.Write(decomp.PrimeNumbers[x] + " ");
-                    }
-                } else
-                {
-                    Console.Write("\r\nSem divisores primos");
-                }
+        private static void PrintPrimes(Decomposition decomp)
+        {
+            if (decomp.PrimeNumbers.Count > 0)
+            {
+                Console.Write("\n\nOs números primos são: ");
+                decomp.PrimeNumbers.ForEach(i => Console.Write("\n{0}", i));
+            }
+            else
+            {
+                Console.Write("\r\nSem divisores primos");
             }
         }
 
         private static void MakeDecomposition(Decomposition decomp)
         {
-            decomp.DividingNumbers = _serviceDecomp.GetDecomposition(decomp).Dividers;
-            decomp.PrimeNumbers = _serviceDecomp.GetPrimes(decomp.DividingNumbers).Primes;
+            var dto = _serviceDecomp.GetDecomposition(decomp);
+
+            decomp.DividingNumbers = dto.DividingNumbers;
+            decomp.PrimeNumbers = dto.PrimeNumbers;
         }
 
         private static bool ValidateEntryNumber(string entryNumber)
