@@ -4,7 +4,7 @@ Este projeto tem a funcionalidade de decompor um número em todos os seus diviso
 
 # Descrição
 
-O projeto foi desenvolvido em C# (.Net Core 3.1), no Visual Studio 2019.  
+O projeto foi desenvolvido em C# (.Net 6), no Visual Studio 2022.  
 Foram utilizados princípios de DDD e testes unitários.
 
 # Presentation
