@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  NumDecompAPI:
+    image: ${DOCKER_REGISTRY-}numdecompapi
+    build:
+      context: .
+      dockerfile: NumDecompAPI/Dockerfile
+
+  NumDecompMinimalAPI:
+    image: ${DOCKER_REGISTRY-}numdecompminimalapi
+    build:
+      context: .
+      dockerfile: NumDecompMinimalAPI/Dockerfile

@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  NumDecompAPI:
+    container_name: NumDecompAPI
+    restart: on-failure
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - 8001:80
+
+  NumDecompMinimalAPI:
+    container_name: NumDecompMinimalAPI
+    restart: on-failure
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - 8002:80
