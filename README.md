@@ -18,20 +18,17 @@ Foram desenvolvidos dois projetos para o acesso à funcionalidade:
 
 # Docker
 
-Para criar a imagem e executar o container da API (raíz do projeto):
+Para subir as imagens pelo docker compose e executar os containers das API's (raíz do projeto):
 
 ```
-  docker build -t decomp-image -f dockerfile .
-```
-
-```
-  docker run -d -p 8080:80 --name decomp-image decomp-image
+  docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d 
 ```
 
 Para acessar:
 
 ```
-  http://localhost:8080/swagger/index.html
+  Api: http://localhost:8081/swagger/index.html
+  Minimal Api: http://localhost:8082/swagger/index.html
 ```
 
 # Azure
